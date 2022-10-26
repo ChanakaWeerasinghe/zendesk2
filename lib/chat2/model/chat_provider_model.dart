@@ -83,7 +83,7 @@ class ChatDepartment {
 
   factory ChatDepartment.fromJson(Map json) {
     String name = json['name'];
-    String id = json['id'];
+    String id = json['id'].toString();
     DEPARTMENT_STATUS status = DEPARTMENT_STATUS.OFFLINE;
     switch (json['status']) {
       case 'AWAY':
